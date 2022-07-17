@@ -161,6 +161,20 @@ address {
 }
 
 /* -------Auth-Nav------- */
+.auth-nav .item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+}
+
+.auth-nav .item:nth-child(1):hover .icon-envelope,
+.auth-nav .item:nth-child(2):hover .icon-smartphone {
+  fill: var(--accent-color);
+}
 
 .auth-nav {
   display: flex;
@@ -198,8 +212,16 @@ address {
 }
 
 .hero.section {
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .hero > .container {
@@ -243,6 +265,13 @@ address {
 }
 
 /* -----------Feature------------*/
+.feature-list .thumb {
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: var(--bg-color-white-grey);
+}
 
 .feature-list {
   display: flex;
@@ -298,6 +327,28 @@ address {
   background-color: var(--bg-color-white-grey);
 }
 
+.team-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-icons-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  fill: #afb1b8;
+  border-radius: 50%;
+  /* outline: 1px solid #212121; */
+}
+
+.team-icons-item:hover,
+.team-icons-item:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .team-title {
   margin-bottom: 50px;
 }
@@ -335,11 +386,17 @@ address {
 }
 
 .team-list p {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
 }
 
 /*-----------FOOTER----------*/
+.footer .container {
+  display: flex;
+  align-items: center;
+}
 
 .footer {
   padding-top: 60px;
@@ -347,6 +404,10 @@ address {
 
   color: var(--primary-white-color);
   background-color: var(--bg-color-grey);
+}
+
+.footer-address {
+  margin-right: 70px;
 }
 
 /*------------Logo-----------*/
@@ -395,6 +456,38 @@ address a {
 .auth-nav-footer .link:hover,
 .auth-nav-footer .link:focus {
   color: var(--accent-color);
+}
+
+/* ------Footer Join----------- */
+.footer-join-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+/* -----------socials----------- */
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icons-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  /* outline: 1px solid #212121; */
+}
+
+.footer-icons-item:hover,
+.footer-icons-item:focus {
+  background-color: var(--accent-color);
 }
 
 /* -------------PORTFOLIO PAGE------------ */
