@@ -417,8 +417,10 @@ address {
   fill: inherit;
 }
 
-.regular-list-item:hover .regular-list-icon {
+.regular-list-item:hover,
+.regular-list-item:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /*-----------FOOTER----------*/
