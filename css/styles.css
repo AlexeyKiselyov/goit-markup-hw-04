@@ -392,10 +392,39 @@ address {
   line-height: 1.18;
 }
 
+/* -------Regular customers------ */
+.regular-title {
+  margin-bottom: 50px;
+}
+
+.regular-list {
+  display: flex;
+  align-content: center;
+  gap: 30px;
+}
+
+.regular-list-item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.regular-list-icon {
+  fill: inherit;
+}
+
+.regular-list-item:hover .regular-list-icon {
+  fill: var(--accent-color);
+}
+
 /*-----------FOOTER----------*/
 .footer .container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .footer {
@@ -467,6 +496,9 @@ address a {
   letter-spacing: 0.03em;
 }
 /* -----------socials----------- */
+.footer-join {
+  margin-top: 12px;
+}
 
 .footer-icons {
   display: flex;
