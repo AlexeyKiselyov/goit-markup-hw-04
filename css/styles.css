@@ -573,7 +573,6 @@ address a {
   padding: 20px 24px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 4px;
 
   border-right: 1px solid #eeeeee;
@@ -584,17 +583,22 @@ address a {
 .examples-card {
   text-decoration: none;
 }
+
 .examples-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .examples-desc {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
-
+.examples-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* шрифты портфолио*/
 /* основной шрифт Roboto 400,500,700,*/
 /* шрифт для лого Raleway 700 */
